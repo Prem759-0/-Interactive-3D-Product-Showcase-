@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA — Next-Gen Product Showcase</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">AURA</div>
+  <ul class="nav-links">
+    <li><a href="#showcase">Product</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+  </ul>
+  <button class="nav-cta">Get Early Access</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span>Now in public beta — v2.4.1</span>
+    </div>
+    <h1>
+      The Future of<br>
+      <span class="line2">Digital</span>
+      <span class="gradient"> Finance</span>
+    </h1>
+    <p class="hero-sub">
+      AURA reimagines how you manage, spend, and grow your wealth — with intelligence built in at every layer.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary">Start Free Trial</button>
+      <button class="btn-ghost">Watch Demo →</button>
+    </div>
+  </div>
+
+  <div class="hero-metrics">
+    <div class="metric-card">
+      <div class="metric-val"><span id="cnt1" class="counter">0</span><span>M+</span></div>
+      <div class="metric-label">Active Users</div>
+      <div class="metric-trend">↑ 24% this month</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">$<span id="cnt2" class="counter">0</span><span>B</span></div>
+      <div class="metric-label">Processed</div>
+      <div class="metric-trend">↑ 3.2B daily</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val"><span id="cnt3" class="counter">0</span><span>ms</span></div>
+      <div class="metric-label">Avg Latency</div>
+      <div class="metric-trend">↓ 12% improved</div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- 3D PRODUCT SHOWCASE -->
+<section class="showcase" id="showcase">
+  <div class="showcase-inner">
+    <div class="showcase-text">
+      <div class="section-tag">The Card</div>
+      <h2>Engineered for<br>Every Moment</h2>
+      <p class="desc">
+        Titanium body. Zero foreign transaction fees. Real-time AI spend analysis. 
+        Your AURA card learns, adapts, and protects — silently, beautifully.
+      </p>
+      <ul class="feature-list">
+        <li><span class="icon">🔐</span> Biometric authentication, 256-bit encrypted</li>
+        <li><span class="icon">⚡</span> Instant cross-border transfers, 180+ currencies</li>
+        <li><span class="icon">🧠</span> AI fraud detection with 99.97% accuracy</li>
+        <li><span class="icon">♾️</span> Unlimited 3% cashback, no caps</li>
+        <li><span class="icon">🌍</span> Carbon-neutral, recycled ocean plastic card</li>
+      </ul>
+    </div>
+
+    <div class="product-3d-wrap" id="card3d-wrap">
+      <div class="product-3d" id="card3d">
+        <div class="card-face">
+          <div class="card-glow" id="cardGlow"></div>
+          <div class="card-particles" id="cardParticles"></div>
+          <div class="card-chip"></div>
+          <div class="card-network"></div>
+          <div class="card-number">4582 •••• •••• 9271</div>
+          <div class="card-meta">
+            <div>
+              <div class="card-label">Card Holder</div>
+              <div class="card-value">Alex Reynolds</div>
+            </div>
+            <div>
+              <div class="card-label">Expires</div>
+              <div class="card-value">11/29</div>
+            </div>
+            <div style="text-align:right">
+              <div class="card-label">Network</div>
+              <div class="card-value" style="color:var(--accent3)">AURA∞</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats reveal" id="stats">
+  <div class="section-tag" style="justify-content:center">By the Numbers</div>
+  <h2>Trusted at Scale</h2>
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num"><span class="stat-counter" data-target="12">0</span><span class="suffix">M+</span></div>
+      <div class="stat-unit">Users worldwide</div>
+      <div class="stat-desc">Across 90 countries</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">$<span class="stat-counter" data-target="48">0</span><span class="suffix">B</span></div>
+      <div class="stat-unit">Transactions</div>
+      <div class="stat-desc">Processed securely</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="stat-counter" data-target="99">0</span><span class="suffix">.97%</span></div>
+      <div class="stat-unit">Uptime SLA</div>
+      <div class="stat-desc">Since inception</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="stat-counter" data-target="4">0</span><span class="suffix">.9★</span></div>
+      <div class="stat-unit">App rating</div>
+      <div class="stat-desc">2M+ reviews</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features reveal" id="features">
+  <div class="features-header">
+    <div class="section-tag" style="justify-content:center">Capabilities</div>
+    <h2>Built Differently</h2>
+    <p class="desc">Every feature is a deliberate decision to give you more control, more insight, and more security.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon" style="background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(108,99,255,0.05)); color:var(--accent)">🧠</div>
+      <h3>Predictive Intelligence</h3>
+      <p>Our AI engine analyzes 340+ signals per transaction to predict and prevent issues before they happen.</p>
+      <span class="feat-tag" style="background:rgba(108,99,255,0.1);color:var(--accent)">AI-Powered</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon" style="background:linear-gradient(135deg,rgba(67,232,216,0.2),rgba(67,232,216,0.05)); color:var(--accent3)">⚡</div>
+      <h3>Instant Settlements</h3>
+      <p>Real-time processing across 180+ currencies with sub-40ms global latency — even at peak load.</p>
+      <span class="feat-tag" style="background:rgba(67,232,216,0.1);color:var(--accent3)">Real-Time</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon" style="background:linear-gradient(135deg,rgba(255,101,132,0.2),rgba(255,101,132,0.05)); color:var(--accent2)">🛡️</div>
+      <h3>Zero-Trust Security</h3>
+      <p>Every request is authenticated, every packet encrypted. Military-grade security that never compromises UX.</p>
+      <span class="feat-tag" style="background:rgba(255,101,132,0.1);color:var(--accent2)">Enterprise</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon" style="background:linear-gradient(135deg,rgba(240,192,64,0.2),rgba(240,192,64,0.05)); color:var(--gold)">📊</div>
+      <h3>Wealth Analytics</h3>
+      <p>Visualize your entire financial footprint in real time — from net worth trends to category breakdowns.</p>
+      <span class="feat-tag" style="background:rgba(240,192,64,0.1);color:var(--gold)">Insights</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon" style="background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(108,99,255,0.05)); color:var(--accent)">🔗</div>
+      <h3>Open API</h3>
+      <p>Connect AURA to your entire stack. 200+ native integrations, webhooks, and a developer-first SDK.</p>
+      <span class="feat-tag" style="background:rgba(108,99,255,0.1);color:var(--accent)">Developer</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon" style="background:linear-gradient(135deg,rgba(67,232,216,0.2),rgba(67,232,216,0.05)); color:var(--accent3)">🌱</div>
+      <h3>Climate Impact</h3>
+      <p>Every card is carbon-neutral. We offset 2x of every transaction's footprint through verified programs.</p>
+      <span class="feat-tag" style="background:rgba(67,232,216,0.1);color:var(--accent3)">Sustainable</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials reveal" id="testimonials">
+  <div class="section-tag" style="justify-content:center;margin-bottom:1rem">Social Proof</div>
+  <h2>Loved by Thousands</h2>
+  <p class="sub">Real feedback from real users across the globe.</p>
+
+  <div class="testimonial-track-wrap">
+    <div class="testimonial-track" id="tTrack">
+      <!-- Cards duplicated in JS -->
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing reveal" id="pricing">
+  <div class="section-tag" style="justify-content:center">Plans</div>
+  <h2>Simple, Honest Pricing</h2>
+  <p class="sub">No hidden fees. No surprise charges. Cancel anytime.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-tier" style="color:var(--muted)">Starter</div>
+      <div class="price-amount"><sup>$</sup>0 <span class="period">/mo</span></div>
+      <p class="price-desc">Everything you need to get started managing money smarter.</p>
+      <ul class="price-features">
+        <li><span class="check">✓</span> 1 virtual card</li>
+        <li><span class="check">✓</span> Basic analytics</li>
+        <li><span class="check">✓</span> $500 monthly spend</li>
+        <li><span class="x">✗</span> AI insights</li>
+        <li><span class="x">✗</span> Physical card</li>
+      </ul>
+      <button class="price-btn">Get Started Free</button>
+    </div>
+
+    <div class="price-card featured">
+      <div class="price-badge">Most Popular</div>
+      <div class="price-tier" style="color:var(--accent3)">Pro</div>
+      <div class="price-amount"><sup>$</sup>19 <span class="period">/mo</span></div>
+      <p class="price-desc">Full-featured for individuals and power users who demand more.</p>
+      <ul class="price-features">
+        <li><span class="check">✓</span> 10 virtual cards</li>
+        <li><span class="check">✓</span> AI-powered analytics</li>
+        <li><span class="check">✓</span> Unlimited spend</li>
+        <li><span class="check">✓</span> Physical Titanium card</li>
+        <li><span class="check">✓</span> 3% cashback everywhere</li>
+      </ul>
+      <button class="price-btn">Start 30-Day Trial</button>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier" style="color:var(--accent)">Enterprise</div>
+      <div class="price-amount" style="font-size:2rem">Custom</div>
+      <p class="price-desc">White-glove service for teams, companies, and institutions.</p>
+      <ul class="price-features">
+        <li><span class="check">✓</span> Unlimited cards</li>
+        <li><span class="check">✓</span> Dedicated support SLA</li>
+        <li><span class="check">✓</span> Custom integrations</li>
+        <li><span class="check">✓</span> SOC 2 compliance</li>
+        <li><span class="check">✓</span> Priority roadmap input</li>
+      </ul>
+      <button class="price-btn">Contact Sales →</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section reveal">
+  <div class="section-tag" style="justify-content:center">Get Started</div>
+  <h2>Ready to Elevate<br>Your <span class="gradient">Financial Life?</span></h2>
+  <p class="sub">Join 12M+ people who've already made the switch. No credit card required.</p>
+  <div class="cta-actions">
+    <button class="btn-primary">Create Free Account</button>
+    <button class="btn-ghost">Talk to Sales</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="nav-logo footer-logo">AURA</div>
+  <ul class="footer-links">
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Security</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Careers</a></li>
+  </ul>
+  <div class="footer-copy">© 2025 AURA Inc. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
